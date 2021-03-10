@@ -772,6 +772,6 @@ class SearchResults:
         if self.view == 'html':
             return self._view_html(self.results)
         elif any([self.view == v for v in ['df', 'dataframe', 'table']]):
-            return self.get_results_df()._repr_html_()
+            return self.get_results_df()#._repr_html_()
         else:
             return self._view_html(self.results)
